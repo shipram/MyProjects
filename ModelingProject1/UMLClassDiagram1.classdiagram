@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="e8bad3f9-10e4-4601-843d-eb8f6d2ad7a2" name="UMLClassDiagram1" linkedPackageId="e9da608d-3d1a-4bd1-bfa9-76f3861643ac" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6c1d2b91-28c6-48f4-a793-a54c57589f2d">
+      <profileInstance Id="95434ed2-813c-4eac-a57e-738fab0d31ef" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="13ec4c36-80a0-4239-9363-9ed3407f99e8">
+      <profileInstance Id="efc5a62f-1d1e-4714-8d8a-6a160bbfbf4a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e40c3929-8173-4549-8d57-ddff70661e37" name="State" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76dc95d0-1373-4559-939b-9b9396e496e1" />
+        <generalsInternal>
+          <generalization Id="67518658-4ee2-41be-8f52-79b873fac797" isSubstitutable="false">
+            <classMoniker Id="ddebc78e-cb01-4dc3-85a3-b72e228112de" LastKnownName="Setup_Started" />
+            <elementDefinition Id="683293b6-ccca-4c77-aa7d-19394b70152a" />
+          </generalization>
+          <generalization Id="04af112a-1783-4c66-93a7-1cd82491315a" isSubstitutable="false">
+            <classMoniker Id="7d0b9fcd-79d2-4e74-9cdc-ccff00e53a6e" LastKnownName="Assessment_InProgress" />
+            <elementDefinition Id="71cf3006-1937-427b-8307-90c4fd45adc8" />
+          </generalization>
+          <generalization Id="fc84f30e-4759-4708-8041-c73bace345a3" isSubstitutable="false">
+            <classMoniker Id="760adc88-15ba-45b4-9d81-930f8b8ea4fe" LastKnownName="PatchRun_Created" />
+            <elementDefinition Id="625a5ebd-8736-4572-9079-0d928a5fbd35" />
+          </generalization>
+          <generalization Id="ab4d11d4-9701-4a74-990e-1aac8690f224" isSubstitutable="false">
+            <classMoniker Id="7d5dedab-9582-4f27-9174-c36bfedaeee3" LastKnownName="ReAssessment_InProgress" />
+            <elementDefinition Id="c2bef796-90cc-4ea4-9cdd-965bd7356788" />
+          </generalization>
+          <generalization Id="5710613c-a802-440c-99ce-2b8a848e1267" isSubstitutable="false">
+            <classMoniker Id="65881108-9212-4d93-bb85-863b5083e604" LastKnownName="Cleanup_Started" />
+            <elementDefinition Id="5c56db55-7f78-429d-9ce5-2fd808a6d157" />
+          </generalization>
+          <generalization Id="a4eba8d8-8182-4eab-ab8b-fff69438a38c" isSubstitutable="false">
+            <classMoniker Id="26ef662b-cf8f-4115-9977-9969535446ad" LastKnownName="PatchRun_InProgress" />
+            <elementDefinition Id="30325da8-f1ca-4f92-93fb-e8cfd7600065" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68777ad2-a7ac-4179-84bd-9a49b5ffbe63" name="TestCase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6791e160-7b3a-4568-84ae-e96be8d617c3" />
+        <targetEnds>
+          <association Id="1d76c23a-7e84-44a5-b50a-6d9574fa065b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e40c3929-8173-4549-8d57-ddff70661e37" LastKnownName="State" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0daf437d-cd9f-485e-8d12-6f5c7af98db3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="afda8fba-9b43-4f61-8981-6bc7b6be4a1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5ece31a-b383-4231-807a-dd889f02a62d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77352caf-c409-4f62-807c-e2aef37b049c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="957fac3b-b4ce-49fa-870f-3f2ba30e2b24" />
+          </association>
+          <association Id="68310017-6885-42ac-b141-6d07d55bfc54" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c1ff403d-8814-4f27-9673-9342ec935946" LastKnownName="StateLoader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ba3f4f4-0919-463c-8ae2-2e33118a9853" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ff4f00c-cfb2-4f97-81d5-65f6bc4c7208" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="34ee1d55-de59-4f41-8eab-6aa45f7de430" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb88a394-ba9a-44cf-9785-59e4bfccb6a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68cf9133-859c-4686-b585-77f19d186099" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ddebc78e-cb01-4dc3-85a3-b72e228112de" name="Setup_Started" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fbab7603-c437-485b-8321-d3aa1bd12fbb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d0b9fcd-79d2-4e74-9cdc-ccff00e53a6e" name="Assessment_InProgress" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a35d6bdb-5490-4e91-8e77-f4ab907acfe0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="760adc88-15ba-45b4-9d81-930f8b8ea4fe" name="PatchRun_Created" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ffb7a37b-bc7c-45fa-ac81-1a4260aaaea6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1ff403d-8814-4f27-9673-9342ec935946" name="StateLoader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12133062-4ebc-4960-8d66-14bc2d53993c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d5dedab-9582-4f27-9174-c36bfedaeee3" name="ReAssessment_InProgress" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4d5cd4a-a403-4d6c-80de-ca04ef500db4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="65881108-9212-4d93-bb85-863b5083e604" name="Cleanup_Started" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e2799c2d-2524-42f4-a3a0-627d92dc4857" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="26ef662b-cf8f-4115-9977-9969535446ad" name="PatchRun_InProgress" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6134f4e-b435-4e6d-b57a-1b03f28c0b35" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="e9da608d-3d1a-4bd1-bfa9-76f3861643ac" name="ModelingProject1">
+    <elementDefinition Id="54542051-79ea-4c5b-ab16-ac49a210b9a3" />
+  </package>
+</logicalClassDesignerModel>

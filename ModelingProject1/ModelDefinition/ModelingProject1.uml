@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="54542051-79ea-4c5b-ab16-ac49a210b9a3"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="76dc95d0-1373-4559-939b-9b9396e496e1"
+        name="State"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="96e6ed15-1d1f-46e1-b49b-ba4771d27ca0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9ac3b2e3-7d03-4403-89a9-d850f9d87860"
+              LastKnownName="Uninitialized"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="683293b6-ccca-4c77-aa7d-19394b70152a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fbab7603-c437-485b-8321-d3aa1bd12fbb"
+              LastKnownName="Setup_Started"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="71cf3006-1937-427b-8307-90c4fd45adc8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a35d6bdb-5490-4e91-8e77-f4ab907acfe0"
+              LastKnownName="Assessment_InProgress"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="625a5ebd-8736-4572-9079-0d928a5fbd35"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ffb7a37b-bc7c-45fa-ac81-1a4260aaaea6"
+              LastKnownName="PatchRun_Created"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="c2bef796-90cc-4ea4-9cdd-965bd7356788"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4d5cd4a-a403-4d6c-80de-ca04ef500db4"
+              LastKnownName="ReAssessment_InProgress"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="5c56db55-7f78-429d-9ce5-2fd808a6d157"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e2799c2d-2524-42f4-a3a0-627d92dc4857"
+              LastKnownName="Cleanup_Started"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="30325da8-f1ca-4f92-93fb-e8cfd7600065"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b6134f4e-b435-4e6d-b57a-1b03f28c0b35"
+              LastKnownName="PatchRun_InProgress"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4609e6ba-d8d9-4c95-b99c-c80597b3f34f"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6791e160-7b3a-4568-84ae-e96be8d617c3"
+        name="TestCase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="957fac3b-b4ce-49fa-870f-3f2ba30e2b24"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="76dc95d0-1373-4559-939b-9b9396e496e1"
+              LastKnownName="State"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afda8fba-9b43-4f61-8981-6bc7b6be4a1c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77352caf-c409-4f62-807c-e2aef37b049c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="68cf9133-859c-4686-b585-77f19d186099"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="12133062-4ebc-4960-8d66-14bc2d53993c"
+              LastKnownName="StateLoader"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ff4f00c-cfb2-4f97-81d5-65f6bc4c7208"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb88a394-ba9a-44cf-9785-59e4bfccb6a7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d426abaa-7085-4635-b8fa-23c0185ccf67"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="be86ce1c-c72c-47d8-8f9d-621b27aa4f76"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ac3b2e3-7d03-4403-89a9-d850f9d87860"
+        name="Uninitialized"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fbab7603-c437-485b-8321-d3aa1bd12fbb"
+        name="Setup_Started"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="c7fddb1f-9e20-4a06-901a-bf21d58d34de"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4ffa7031-0e4e-4bcd-b0b0-5afa02e29013"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a35d6bdb-5490-4e91-8e77-f4ab907acfe0"
+        name="Assessment_InProgress"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ffb7a37b-bc7c-45fa-ac81-1a4260aaaea6"
+        name="PatchRun_Created"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12133062-4ebc-4960-8d66-14bc2d53993c"
+        name="StateLoader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e4d5cd4a-a403-4d6c-80de-ca04ef500db4"
+        name="ReAssessment_InProgress"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2799c2d-2524-42f4-a3a0-627d92dc4857"
+        name="Cleanup_Started"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a877acc-5c06-4f03-aba6-0590541c7221"
+        name="PatchRun_Started1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b6134f4e-b435-4e6d-b57a-1b03f28c0b35"
+        name="PatchRun_InProgress"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
