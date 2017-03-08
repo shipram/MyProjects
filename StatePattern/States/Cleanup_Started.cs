@@ -1,26 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StatePattern.States
+﻿namespace StatePattern
 {
-    public class Cleanup_Started : State
+    internal class Cleanup_Started : State
     {
-        public Cleanup_Started(State oldState)
+        internal Cleanup_Started(State oldState)
             : this(oldState.jsonString, oldState.stateLoader)
         {
         }
 
         //to pass on to the next state
-        public Cleanup_Started(string jsonString, StateLoader stateLoader)
+        internal Cleanup_Started(string jsonString, StateLoader stateLoader)
         {
             this.jsonString = jsonString;
             this.stateLoader = stateLoader;
         }
 
-        public override void PerformOperations()
+        internal override void PerformOperations()
         {
             // read RG Id from the json and delete all.
             this.UpdateState();

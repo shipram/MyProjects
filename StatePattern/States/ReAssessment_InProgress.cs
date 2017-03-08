@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace StatePattern.States
+﻿namespace StatePattern
 {
-    class ReAssessment_InProgress : State
+    internal class ReAssessment_InProgress : State
     { // to take values from the old state
-        public ReAssessment_InProgress(State oldState)
+        internal ReAssessment_InProgress(State oldState)
             : this(oldState.jsonString, oldState.stateLoader)
         {
         }
 
         //to pass on to the next state
-        public ReAssessment_InProgress(string jsonString, StateLoader stateLoader)
+        internal ReAssessment_InProgress(string jsonString, StateLoader stateLoader)
         {
             this.jsonString = jsonString;
             this.stateLoader = stateLoader;
         }
 
-        public override void PerformOperations()
+        internal override void PerformOperations()
         {
            // Check if there are Update Run Progress records, then update state
             this.UpdateState();

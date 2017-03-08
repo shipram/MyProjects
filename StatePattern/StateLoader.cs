@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace StatePattern
 {
-    using StatePattern.States;
-
-    public class StateLoader
+    internal class StateLoader
     {
-        public State CurrentState { get; set; }
+        internal State CurrentState { get; set; }
 
-        public StateLoader()
+        internal StateLoader()
         {
             // LOAD STATE
             // check db for the row for this test
@@ -24,7 +17,7 @@ namespace StatePattern
             this.CurrentState = new Assessment_InProgress("{VMID:abcd}", this);
         }
 
-        public void TransitionState()
+        internal void TransitionState()
         {
             // Get Test StartTime from the table and calculate timespan since the test started, say its 4 hours
             var timeSpan = new TimeSpan(0, 4, 0,0);

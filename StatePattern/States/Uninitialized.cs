@@ -1,4 +1,6 @@
-﻿namespace StatePattern
+﻿
+// NOT CALLING THIS STATE FOR NOW UNTIL THERE IS SOMETHING SUBSTANTIAL FOR IT TO DO.
+namespace StatePattern
 {
     public class Uninitialized : State
     {

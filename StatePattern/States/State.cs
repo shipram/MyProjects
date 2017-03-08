@@ -2,11 +2,11 @@
 {
     public abstract class State
     {
-        public StateLoader stateLoader;
+        internal StateLoader stateLoader;
 
-        public string jsonString;
+        internal string jsonString;
 
-        public abstract void PerformOperations();
+        internal abstract void PerformOperations();
 
     }
 }

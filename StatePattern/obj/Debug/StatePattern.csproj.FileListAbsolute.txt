@@ -7,3 +7,6 @@ c:\users\shipram\documents\visual studio 2013\Projects\StatePattern\StatePattern
 C:\Code\MyProjects\MyProjects\StatePattern\bin\Debug\StatePattern.exe.config
 C:\Code\MyProjects\MyProjects\StatePattern\obj\Debug\StatePattern.exe
 C:\Code\MyProjects\MyProjects\StatePattern\obj\Debug\StatePattern.pdb
+C:\Code\MyProjects\MyProjects\StatePattern\obj\Debug\StatePattern.csprojResolveAssemblyReference.cache
+C:\Code\MyProjects\MyProjects\StatePattern\bin\Debug\StatePattern.exe
+C:\Code\MyProjects\MyProjects\StatePattern\bin\Debug\StatePattern.pdb
